@@ -46,5 +46,8 @@
 - [Ultimate Vocal Remover GUI](https://github.com/Anjok07/ultimatevocalremovergui) by [Anjok07](https://github.com/Anjok07)
 - [Music Source Separation Universal Training Code](https://github.com/ZFTurbo/Music-Source-Separation-Training) by [ZFTurbo](https://github.com/ZFTurbo)
 - [AICoverGen](https://github.com/SociallyIneptWeeb/AICoverGen) by [SociallyIneptWeeb](https://github.com/SociallyIneptWeeb)
+- [ShiromiyaG](https://github.com/ShiromiyaG) for being the Original Creator of this Repository
+- [Eddycrack864](https://github.com/Eddycrack864/Eddycrack864) for being the New Owner and taking care of the repository
 - [FullmatheusBallZ](https://www.youtube.com/@FullmatheusBallZ) for helping me test the colabs
 - [Freepik](https://www.freepik.com) for the [image](https://www.freepik.com/free-psd/futuristic-cyber-monday-web-template_19966151.htm#fromView=search&page=1&position=3&uuid=d4a28e77-dc6f-4ec3-9c37-3525afc311e0)
+- [Nick088](https://linktr.ee/Nick088) for improving the Start UI cells in the Google Colabs & Kaggle, and the step by step guide for the local precompiled
