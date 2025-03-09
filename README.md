@@ -7,15 +7,29 @@
 ## Local
 
 ### Precompiled
-1. Check out the [Latest Release](https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI/releases/latest)
-2. Download the latest precompiled zip
-3. Extract it
-4. Check for updates via:
-    - Running update.bat on Windows
-    - Running update.sh on Mac/Linux
-5. Run it via:
-    - Running run.bat on Windows
-    - Running run.sh on Mac/Linux
+</div>
+
+<ol>
+    <li>Check out the <a href="https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI/releases/latest">Latest Release</a></li>
+    <li>Download the latest precompiled zip</li>
+    <li>Extract it</li>
+    <li>Check for updates via:
+        <ul class="no-bullets">
+            <li>Running update.bat on Windows</li>
+            <li>Running update.sh on Mac/Linux</li>
+        </ul>
+    </li>
+    <li>Run it via:
+        <ul class="no-bullets">
+            <li>Running run.bat on Windows</li>
+            <li>Running run.sh on Mac/Linux</li>
+        </ul>
+    </li>
+</ol>
+
+</div>
+
+<div align="center">
 
 # Cloud
 
