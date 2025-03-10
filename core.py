@@ -244,7 +244,7 @@ def add_audio_effects(
         )
     )
     with AudioFile(audio_path) as f:
-        with AudioFile(output_path, "w", f.samplerate, f.num_channels) as o:
+        with AudioFile(output_path, "w", f.samplerate, f.num_channels, format="OPUS") as o:
             while f.tell() < f.frames:
                 chunk = f.read(int(f.samplerate))
                 effected = board(chunk, f.samplerate, reset=False)
