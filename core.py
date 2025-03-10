@@ -243,12 +243,21 @@ def add_audio_effects(
             width=reverb_width,
         )
     )
-    with AudioFile(audio_path) as f:
-        with AudioFile(output_path, "w", f.samplerate, f.num_channels, format="OPUS") as o:
-            while f.tell() < f.frames:
-                chunk = f.read(int(f.samplerate))
-                effected = board(chunk, f.samplerate, reset=False)
-                o.write(effected)
+    audio = AudioSegment.from_file(audio_path, format="opus")
+    samples = audio.get_array_of_samples()
+    sample_rate = audio.frame_rate
+
+    effected_samples = board(samples, sample_rate, reset=False)
+
+    effected_audio = AudioSegment(
+        effected_samples.tobytes(),
+        frame_rate=sample_rate,
+        sample_width=audio.sample_width,
+        channels=audio.channels,
+    )
+    
+    effected_audio.export(output_path, format="opus")
+
     return output_path
 
 
