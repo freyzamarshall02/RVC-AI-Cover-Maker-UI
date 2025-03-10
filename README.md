@@ -33,9 +33,9 @@
 
 # Cloud
 
-| **English** | **PT-BR** | **Kaggle** |
-|:---:|:---:|:---:|
-| <a target="_blank" href="https://colab.research.google.com/github/Eddycrack864/RVC-AI-Cover-Maker-UI/blob/main/assets/RVCAICoverMakerUI.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> </a> | <a target="_blank" href="https://colab.research.google.com/github/Eddycrack864/RVC-AI-Cover-Maker-UI/blob/main/assets/RVCAICoverMakerUI_PT_BR.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> </a> |  <a target="_blank" href="https://www.kaggle.com/code/eddycrack864/rvc-ai-cover-maker-ui"> <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open In Kaggle"/> </a> |
+| **English** | **Kaggle** |
+|:---:|:---:|
+| <a target="_blank" href="https://colab.research.google.com/github/Eddycrack864/RVC-AI-Cover-Maker-UI/blob/main/assets/RVCAICoverMakerUI.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> </a> |  <a target="_blank" href="https://www.kaggle.com/code/eddycrack864/rvc-ai-cover-maker-ui"> <img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open In Kaggle"/> </a> |
 
 Here's also an [English Guide for Google Colab & Kaggle UI](https://docs.aihub.gg/rvc/cloud/aicovermaker/)
 
