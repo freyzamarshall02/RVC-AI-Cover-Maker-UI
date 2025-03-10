@@ -1,6 +1,8 @@
 import sys, os
 import subprocess
 import torch
+import torchaudio
+import torchaudio.transforms as T
 from functools import lru_cache
 import shutil
 from pedalboard import Pedalboard, Reverb
@@ -233,6 +235,10 @@ def add_audio_effects(
     reverb_width,
     output_path,
 ):
+    # Load the audio file with torchaudio
+    waveform, sample_rate = torchaudio.load(audio_path)
+
+    # Initialize the Pedalboard with the Reverb effect
     board = Pedalboard([
         Reverb(
             room_size=reverb_size,
@@ -243,20 +249,14 @@ def add_audio_effects(
         )
     ])
 
-    audio = AudioSegment.from_file(audio_path, format="opus")
-    samples = audio.get_array_of_samples()
-    sample_rate = audio.frame_rate
+    # Apply the effects
+    effected_waveform = board(waveform.numpy(), sample_rate, reset=False)
 
-    effected_samples = board(samples, sample_rate, reset=False)
+    # Convert the processed numpy array back to a tensor
+    effected_waveform = torch.from_numpy(effected_waveform)
 
-    effected_audio = AudioSegment(
-        effected_samples.tobytes(),
-        frame_rate=sample_rate,
-        sample_width=audio.sample_width,
-        channels=audio.channels,
-    )
-    
-    effected_audio.export(output_path, format="opus")
+    # Save the processed audio as .opus
+    torchaudio.save(output_path, effected_waveform, sample_rate, format="opus")
 
     return output_path
 
