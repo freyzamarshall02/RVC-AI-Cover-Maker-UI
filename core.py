@@ -233,8 +233,7 @@ def add_audio_effects(
     reverb_width,
     output_path,
 ):
-    board = Pedalboard([])
-    board.append(
+    board = Pedalboard([
         Reverb(
             room_size=reverb_size,
             dry_level=reverb_dry,
@@ -242,7 +241,8 @@ def add_audio_effects(
             damping=reverb_damping,
             width=reverb_width,
         )
-    )
+    ])
+
     audio = AudioSegment.from_file(audio_path, format="opus")
     samples = audio.get_array_of_samples()
     sample_rate = audio.frame_rate
@@ -259,7 +259,6 @@ def add_audio_effects(
     effected_audio.export(output_path, format="opus")
 
     return output_path
-
 
 def merge_audios(
     vocals_path,
